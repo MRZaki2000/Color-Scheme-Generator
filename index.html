@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            
+            <div class="header-container container">
+                <input id="seed-color" class="seed-color" type="color">
+                
+                <select id="options">
+                    <option value="complement">complement</option>
+                    <option value="quad">quad</option>
+                    <option value="monochrome">monochrome</option>
+                    <option value="monochrome-dark">monochrome-dark</option>
+                    <option value="monochrome-light">monochrome-light</option>
+                    <option value="analogic">analogic</option>
+                    
+                    <option value="analogic-complement">analogic-complement</option>
+                    <option value="triad">triad</option>
+                    
+                </select>
+                
+                <button id="get-scheme">Get color scheme</button>  
+            </div>
+            
+        </header>
+        <main>
+            <div id="display-colors" class="display-colors container">
+            </div>
+            
+            <div id="display-hex" class="display-hex container">
+            </div>
+        </main>
+        
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
